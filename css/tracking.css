@@ -40,7 +40,7 @@
 .trk-eta-chip { position: absolute; left: 16px; top: 14px; display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 18px; background: #fff; font-size: 13px; color: var(--ok); box-shadow: 0 4px 14px -6px rgba(0,0,0,.35); }
 .trk-eta-chip svg { width: 18px; height: 18px; }
 .trk-eta-chip b { color: var(--ink-d); }
-.trk.dl .trk-body { position: relative; margin-top: -22px; z-index: 2; }
+.trk--delivery .trk-body { position: relative; margin-top: -22px; z-index: 2; }
 
 /* thẻ chung */
 .trk-card { display: block; width: calc(100% - 24px); margin: 10px 12px 0; padding: 16px; border-radius: 14px; background: #fff; box-shadow: 0 1px 0 #EEECE7; animation: mnSwap .35s var(--ease-ios) both; }

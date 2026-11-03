@@ -234,17 +234,18 @@ App.screens.home = ({ goTab }) => {
     if (t.dataset.promo) return App.ui.soon('C14', 'Chi tiết khuyến mãi');
 
     const q = t.dataset.q;
-    if (q === 'voucher') return App.auth.require(() => App.ui.soon('C11', 'Voucher của tôi'), 'Đăng nhập để xem voucher của bạn');
-    if (q === 'refer') return App.ui.soon('P4', 'Giới thiệu bạn bè');
-    if (q === 'points') return App.auth.require(() => App.ui.soon('C11', 'Điểm trà & đổi quà'), 'Đăng nhập để tích điểm trà');
-    if (q === 'calo') return App.ui.soon('C5', 'Tính calo theo món');
+    if (q === 'voucher') return App.auth.require(() => App.nav.push(App.screens.rewards()), 'Đăng nhập để xem voucher của bạn');
+    if (q === 'refer') return App.auth.require(() => App.nav.push(App.screens.refer()), 'Đăng nhập để lấy mã giới thiệu của bạn');
+    if (q === 'points') return App.auth.require(() => App.nav.push(App.screens.points()), 'Đăng nhập để tích điểm trà');
+    if (q === 'calo') return App.nav.push(App.screens.calories());
 
     switch (t.dataset.act) {
       case 'order': e.stopPropagation(); return goTab('order');
       case 'stamp': App.ui.haptic(5); return App.nav.push(App.screens.stamps({ onOrder: () => goTab('order') }));
       case 'login': return App.auth.require(null, 'Đăng nhập để nhận quà chào mừng hội viên mới');
-      case 'tier': case 'points': return App.ui.soon('C11', 'Hạng & điểm trà');
-      case 'vouchers': return App.ui.soon('C11', 'Voucher của tôi');
+      case 'tier': return App.nav.push(App.screens.tiers());
+      case 'points': return App.nav.push(App.screens.points());
+      case 'vouchers': return App.nav.push(App.screens.rewards());
       case 'qr': return App.auth.require(showQR, 'Đăng nhập để dùng mã hội viên');
       case 'lang': return showLang();
       case 'track': {
