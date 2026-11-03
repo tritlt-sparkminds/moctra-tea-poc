@@ -24,7 +24,7 @@ App.screens.tracking = (orderId, { fromDetail } = {}) => {
     : [['Đã thanh toán', 'Đơn đã gửi đến cửa hàng'], ['Đang pha chế', 'Cửa hàng đang chuẩn bị món'], ['Đang giao hàng', 'Tài xế đang trên đường đến bạn'], ['Đã giao thành công', 'Chúc bạn ngon miệng!']];
 
   const el = App.ui.el(`
-    <section class="trk ${pickup ? 'pk' : 'dl'}">
+    <section class="trk ${pickup ? 'trk--pickup' : 'trk--delivery'}">
       <header class="trk-nav"><button class="trk-back" data-act="back" aria-label="Quay lại">${back}</button><h1>Theo dõi đơn hàng</h1><button class="trk-help" data-act="help">Hỗ trợ</button></header>
       <div class="trk-scroll">
         ${pickup ? '<div class="trk-hero"></div>' : `

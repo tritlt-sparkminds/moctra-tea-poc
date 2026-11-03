@@ -1,0 +1,55 @@
+/* Giới thiệu bạn bè */
+.rf { background: #F4F3F0 !important; }
+.rf .ly-nav { background: #fff; }
+.rf-hero { padding: 24px 24px 56px; text-align: center; color: #F4EEE2; background: linear-gradient(160deg, #2E4A3B, #14281F); }
+.rf-ic { display: grid; place-items: center; width: 60px; height: 60px; margin: 0 auto 12px; border-radius: 50%; color: #D9B77A; background: rgba(255,255,255,.1); }
+.rf-ic svg { width: 32px; height: 32px; }
+.rf-hero h2 { margin: 0; font: 600 24px/1.25 var(--font-display); }
+.rf-hero p { margin: 10px 0 0; font-size: 13px; line-height: 1.5; color: #C9D6CD; }
+.rf-hero b { color: #D9B77A; }
+.rf-code { margin: -36px 16px 0; padding: 16px; border-radius: 14px; text-align: center; background: #fff; box-shadow: 0 12px 26px -18px rgba(0,0,0,.5); }
+.rf-code small { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #8E908A; }
+.rf-code > b { display: block; margin: 6px 0 14px; font-size: 28px; font-weight: 800; letter-spacing: 3px; }
+.rf-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.rf-btns button { height: 44px; border-radius: 3px; text-align: center; font-size: 13.5px; font-weight: 700; border: 1.5px solid #16241D; }
+.rf-btns .dark { background: #16241D; color: #fff; }
+.rf-card { margin: 12px 16px 0; padding: 16px; border-radius: 12px; background: #fff; }
+.rf-card h3 { margin: 0 0 10px; font-size: 14.5px; font-weight: 800; }
+.rf-card ol { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.8; color: #4C504A; }
+.rf-f { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid #F3F1EC; }
+.rf-f > span { display: grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: 50%; font-weight: 700; color: #2E6B4C; background: #E3ECE6; }
+.rf-f div { flex: 1; min-width: 0; }
+.rf-f b { display: block; font-size: 14px; }
+.rf-f small { font-size: 12px; color: #8E908A; }
+.rf-f em { font-style: normal; font-size: 12.5px; font-weight: 700; color: #9A9C95; }
+.rf-f em.ok { color: #2E6B4C; }
+.rf-none { margin: 0; font-size: 13px; color: #8E908A; }
+
+/* Tính calo */
+.cal-res { display: flex; align-items: center; gap: 16px; padding: 12px 20px 18px; background: linear-gradient(180deg, #F6EEDD, #FBF7EF); }
+.cal-ring { position: relative; flex: none; width: 118px; height: 118px; }
+.cal-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.cal-ring circle { fill: none; stroke-width: 9; }
+.cal-ring .bg { stroke: #EADFC8; }
+.cal-ring .fg { stroke: #2E6B4C; stroke-linecap: round; transition: stroke-dashoffset .5s var(--ease-ios); }
+.cal-ring div { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.cal-ring b { font-size: 30px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.cal-ring small { margin-top: 2px; font-size: 12px; color: #6E716B; }
+.cal-info { flex: 1; min-width: 0; }
+.cal-info h2 { margin: 0; font-size: 17px; font-weight: 800; }
+.cal-info p { margin: 3px 0 8px; font-size: 12px; color: #6E716B; }
+.cal-info ul { margin: 0; padding: 0; list-style: none; font-size: 12.5px; }
+.cal-info li { display: flex; justify-content: space-between; padding: 2px 0; }
+.cal-info li span { color: #6E716B; }
+.cal-sec { padding: 16px 20px 0; }
+.cal-sec h3 { margin: 0 0 10px; font-size: 14.5px; font-weight: 800; }
+.cal-rail { display: flex; gap: 10px; margin: 0 -20px; padding: 0 20px 4px; overflow-x: auto; }
+.cal-rail button { flex: none; width: 84px; padding: 8px 6px; border-radius: 10px; text-align: center; border: 1.5px solid #ECEAE4; }
+.cal-rail button.on { border-color: #16241D; background: #E3ECE6; }
+.cal-rail span { display: block; height: 64px; }
+.cal-rail svg { width: 100%; height: 100%; }
+.cal-rail small { display: block; margin-top: 4px; font-size: 11px; line-height: 1.25; }
+.cal-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.cal-chips button { padding: 9px 13px; border-radius: 4px; font-size: 13px; color: #5C5F59; background: #F4F3F0; border: 1.5px solid transparent; }
+.cal-chips button.on { color: #16241D; font-weight: 600; background: #E3ECE6; border-color: #16241D; }
+.cal-note { margin: 18px 20px 0; font-size: 11.5px; line-height: 1.5; color: #A9A79F; }

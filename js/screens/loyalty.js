@@ -121,7 +121,7 @@
         <path d="M10 140V70l30-18 30 18v70M40 52V34M30 140v-30h20v30M140 140V60h60v80M150 60l20-16 20 16M156 80h14v14h-14zM178 80h14v14h-14zM80 140V90h50v50"/>
         <path d="M0 120h220M90 90l15-12 15 12"/>
       </g>
-      <g transform="translate(46 34) rotate(-6)">
+      <g transform="translate(46 38)">
         <path d="M0 6a6 6 0 0 1 6-6h116a6 6 0 0 1 6 6v18a8 8 0 0 0 0 16v18a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V40a8 8 0 0 0 0-16z" fill="#F7F1E4" stroke="#B8AE98" stroke-width="1.2"/>
         <path d="M24 2v60" stroke="#C9BFA9" stroke-dasharray="3 3"/>
         <text x="12" y="38" font-size="7" fill="#9A8F78" transform="rotate(-90 12 38)" font-family="Be Vietnam Pro, sans-serif" letter-spacing="1">MỘC TRÀ</text>

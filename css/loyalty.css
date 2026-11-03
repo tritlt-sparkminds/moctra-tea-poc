@@ -57,8 +57,8 @@
 .pt-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
 .pt-tabs button { display: flex !important; align-items: center; justify-content: center; gap: 6px; height: 40px; border-radius: 8px; background: rgba(255,255,255,.7) !important; font-size: 13px !important; }
 .pt-tabs svg { width: 15px; height: 15px; color: #9A6B2F; }
-.pt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 14px 16px 0; }
-.pt-item { display: flex !important; flex-direction: column; gap: 3px; padding: 8px !important; border-radius: 10px; background: #fff !important; box-shadow: 0 1px 0 #EEECE7, 0 8px 18px -14px rgba(0,0,0,.35); animation: mnSwap .35s calc(var(--i) * 40ms) var(--ease-ios) both; }
+.pt-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; padding: 14px 16px 0; }
+.pt-item { min-width: 0; align-items: stretch; display: flex !important; flex-direction: column; gap: 3px; padding: 8px !important; border-radius: 10px; background: #fff !important; box-shadow: 0 1px 0 #EEECE7, 0 8px 18px -14px rgba(0,0,0,.35); animation: mnSwap .35s calc(var(--i) * 40ms) var(--ease-ios) both; }
 .pt-item:active { transform: scale(.97); }
 .tk-art { width: 100%; height: auto; border-radius: 6px; display: block; }
 .pt-item b { margin-top: 6px; font-size: 13px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
